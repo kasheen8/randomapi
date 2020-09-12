@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random Api</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container mt-5" align="center">
+        <div class="row col-12" align="center" style="position: relative; right: -250px; top: 275px;">
+            <div class="mr-5">
+                <h2>Генерация числа</h2>
+                <div class="form-group">
+                    <label for="id">id генерации</label>
+                    <output type="text" class="form-control" id="id" aria-describedby="emailHelp"></output>
+                </div>
+                <div class="form-group">
+                    <label for="number">Сгенерированное число</label>
+                    <output type="text" class="form-control" id="number" aria-describedby="emailHelp"></output>
+                </div>
+                <button class="btn btn-primary" onclick="">Генерация</button>
+            </div>
+            <div class="mr-5">
+                <h2>Вывод числа по id</h2>
+                <div class="form-group">
+                    <label for="number-id">id генерации</label>
+                    <input type="text" class="form-control" id="number-id" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group">
+                    <label for="output-id">Число</label>
+                    <output type="text" class="form-control" id="output-id" aria-describedby="emailHelp"></output>
+                </div>
+                <div class="form-group">
+                    <label for="time">Время генерации</label>
+                    <output type="text" class="form-control" id="time" aria-describedby="emailHelp"></output>
+                </div>
+                <button class="btn btn-primary" onclick="">Вывод</button>
+            </div>
+        </div>
+    </div>
+<script src="main.js"></script>
+</body>
+</html>
