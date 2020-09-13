@@ -22,7 +22,7 @@ http://bece717471f3.ngrok.io/generation
 ## retrieve(id)
 Api метод retrieve(id) находится по адресу 
 http://bece717471f3.ngrok.io/retrieve/{id} ,
-например http://bece717471f3.ngrok.io/retrieve/6
+например http://bece717471f3.ngrok.io/retrieve/6 .
 Если генерация с таким id существует, возвращает
 http-код 200 и json-файл с id генерации, числом
 и временем генерации(UTC+4).
