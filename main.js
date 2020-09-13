@@ -1,5 +1,7 @@
+const url = 'http://bece717471f3.ngrok.io/'
+
 async function generateNumber() {
-    let res = await fetch('http://randomapi/generation');
+    let res = await fetch(url + 'generation');
     let num_data = await res.json();
     if (num_data.status === true) {
         document.getElementById('gen-id').value = num_data.num_id;
@@ -8,7 +10,7 @@ async function generateNumber() {
 }
 
 async function retrieveNumber(id) {
-    let res = await fetch(`http://randomapi/retrieve/${id}`);
+    let res = await fetch(url + `retrieve/${id}`);
     let num_data = await res.json();
     document.getElementById('output-id').value = '';
     document.getElementById('time').value = '';
