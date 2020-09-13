@@ -24,11 +24,11 @@ switch ($method) {
                 generation($connect);
                 break;
             case 'retrieve':
-                echo "Arr";
+                if (isset($id)) {
+                    retrieve($connect, $id);
+                }
                 break;
         }
-        break;
-    case 'POST':
         break;
 }
 

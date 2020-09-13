@@ -10,19 +10,19 @@
 
     <div class="container mt-5" align="center">
         <div class="row col-12" align="center" style="position: relative; right: -250px; top: 275px;">
-            <div class="mr-5">
+            <div class="mr-5 gen-form">
                 <h2>Генерация числа</h2>
                 <div class="form-group">
-                    <label for="id">id генерации</label>
-                    <output type="text" class="form-control" id="id" aria-describedby="emailHelp"></output>
+                    <label for="gen-id">id генерации</label>
+                    <output  class="form-control" id="gen-id" aria-describedby="emailHelp"></output>
                 </div>
                 <div class="form-group">
-                    <label for="number">Сгенерированное число</label>
-                    <output type="text" class="form-control" id="number" aria-describedby="emailHelp"></output>
+                    <label for="gen-number">Сгенерированное число</label>
+                    <output  class="form-control" id="gen-number" aria-describedby="emailHelp"></output>
                 </div>
-                <button class="btn btn-primary" onclick="">Генерация</button>
+                <button class="btn btn-primary" onclick="generateNumber()">Генерация</button>
             </div>
-            <div class="mr-5">
+            <div class="mr-5 retr-form">
                 <h2>Вывод числа по id</h2>
                 <div class="form-group">
                     <label for="number-id">id генерации</label>
@@ -30,13 +30,13 @@
                 </div>
                 <div class="form-group">
                     <label for="output-id">Число</label>
-                    <output type="text" class="form-control" id="output-id" aria-describedby="emailHelp"></output>
+                    <output class="form-control" id="output-id" aria-describedby="emailHelp"></output>
                 </div>
                 <div class="form-group">
                     <label for="time">Время генерации</label>
-                    <output type="text" class="form-control" id="time" aria-describedby="emailHelp"></output>
+                    <output class="form-control" id="time" aria-describedby="emailHelp"></output>
                 </div>
-                <button class="btn btn-primary" onclick="">Вывод</button>
+                <button class="btn btn-primary" onclick="retrieveNumber(document.getElementById('number-id').value)">Вывод</button>
             </div>
         </div>
     </div>
